@@ -1,0 +1,5 @@
+checkpoint is a special process running after a particular time period in the hdfs. This process adds the new level to hdfs which makes us to 
+update the stored file in the hdfs.  
+HDFS metadata can be thought of consisting of two parts: the base filesystem table (fsimage) and the edit log which 
+lists changes made to the base table (edits). Checkpointing is a process of reconciling fsimage with edits to produce
+a new version of fsimage. There are two benefits arising out of this: a more recent version of fsimage, and a truncated edit log.
