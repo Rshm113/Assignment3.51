@@ -1,0 +1,10 @@
+The four files that need to be configured explicitly :
+1.core-site.xml
+2.hdfs-site.xml
+3.yarn-site.xml
+4.xml
+the following xml sites handle the various thing
+Configure port access
+Manages ssl client authentication
+Controls Network interface
+Changes file permission
