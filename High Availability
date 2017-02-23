@@ -1,0 +1,8 @@
+Namenode High Availability is in the HDFS, where namenode has the pair two namenode Active-Standby. Whenever active namenode crashes the 
+standby plays a major role, it inptrrupts the process and provide a backup for the active immediately. 
+High availability also have a backup plans for standby namenode, so that the cleints would not have to wait. The process will continue without any disturbance 
+
+The NameNodes use shared storage to share the edit log. Edit logs are read by the StandbyNameNode when it takes the responsibility of the ActiveNameNode.
+DataNodes must send block reports to both the NameNodes because of the block mappings.
+The secondary NameNode’s role is subsumed by the StandBy NameNode. StandbyNameNode takes periodic checkpoints of the active NameNode.
+Checkpointing is done by the StandBy NameNode.
